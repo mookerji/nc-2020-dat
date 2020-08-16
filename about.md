@@ -18,5 +18,8 @@ Sources:
 - Based on open data from [NCSBE](https://vt.ncsbe.gov/RegStat/). For more
   details, see notes on [sources][sources].
 
+Questions? Feedback? Concerns? Email
+[mookerji@gmail.com](mailto:mookerji@gmail.com).
+
 [acs]: https://www.census.gov/programs-surveys/acs
 [sources]: https://github.com/mookerji/nc-2020-dat/blob/master/data/README.md
