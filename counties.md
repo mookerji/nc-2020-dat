@@ -9,6 +9,6 @@ permalink: /counties
 
 ![{{ county.county_name }}]({{  county.party_registration_graph  }} ){:class="img-responsive"}
 
-![{{ county.county_name }}]({{  county.party_change_graph  }} ){:class="img-responsive"}
+![{{ county.county_name }}]({{  county.party_cumulative_change_graph  }} ){:class="img-responsive"}
 
 {% endfor %}
