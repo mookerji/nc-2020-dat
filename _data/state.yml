@@ -1,4 +1,4 @@
 state:
-  party_new_electorate_per_county_graph: /assets/images/pct-new-electorate-change-vs-population.png
-  party_registration_changes_graph: /assets/images/weekly-party-affiliation-changes.png
-  party_registration_graph: /assets/images/statewide-registrations-by-party.png
+  party_new_electorate_per_county_graph: assets/images/pct-new-electorate-change-vs-population.png
+  party_registration_changes_graph: assets/images/weekly-party-affiliation-changes.png
+  party_registration_graph: assets/images/statewide-registrations-by-party.png
