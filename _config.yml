@@ -4,4 +4,6 @@ author:
   name:  'Buro Mookerji'
 timezone: UTC−07:00
 header_pages:
+- about.md
+- demographics.md
 - counties.md

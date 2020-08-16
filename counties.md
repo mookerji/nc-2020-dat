@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Counties
-permalink: /counties/
+permalink: /counties
 ---
 
 {% for county in site.data.counties.counties %}
