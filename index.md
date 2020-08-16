@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Statewide Registration (since 02-28-2020)
+title: Statewide Registration
 ---
 
 ![registration count]({{ site.data.state.state.party_registration_graph }} ){:class="img-responsive"}
