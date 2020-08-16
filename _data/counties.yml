@@ -199,5 +199,3 @@ counties:
   party_registration_graph: /assets/images/county-registration-by-party/yadkin.png
 - county_name: yancey
   party_registration_graph: /assets/images/county-registration-by-party/yancey.png
-state:
-  party_registration_graph: /assets/images/statewide-registrations-by-party.png
