@@ -18,6 +18,11 @@ Sources:
 - Based on open data from [NCSBE](https://vt.ncsbe.gov/RegStat/). For more
   details, see notes on [sources][sources].
 
+Changelog:
+
+- **2020-08-16**
+  * Draft webpage and data updates for 2020-08-15 voter registration statistics.
+
 Questions? Feedback? Concerns? Email
 [mookerji@gmail.com](mailto:mookerji@gmail.com).
 

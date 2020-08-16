@@ -3,6 +3,8 @@ layout: page
 title: Statewide Registration
 ---
 
+![under construction](http://textfiles.com/underconstruction/mamagnolia_acresunderconstruction.gif){:class="img-responsive"}
+
 ![registration count]({{ site.data.state.state.party_registration_graph }} ){:class="img-responsive"}
 
 ![registration changes]({{ site.data.state.state.party_registration_changes_graph }} ){:class="img-responsive"}
