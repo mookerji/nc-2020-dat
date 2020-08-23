@@ -21,6 +21,10 @@ Sources:
 Changelog:
 
 - **2020-08-16**
+  * New graph: Population density and registration changes by county.
+  * Consolidated party change statistics and overall registration changes.
+  * Updates for 2020-08-22 voter registration statistics.
+- **2020-08-16**
   * Draft webpage and data updates for 2020-08-15 voter registration statistics.
 
 Questions? Feedback? Concerns? Email

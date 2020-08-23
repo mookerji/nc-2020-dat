@@ -3,3 +3,5 @@ state:
   party_new_electorate_per_county_graph: assets/images/pct-new-electorate-change-vs-population.png
   party_registration_changes_graph: assets/images/weekly-party-affiliation-changes.png
   party_registration_graph: assets/images/statewide-registrations-by-party.png
+  statewide_registrations_by_county_density: assets/images/statewide-registrations-by-county-density.png
+  statewide_registrations_changes_by_party: assets/images/statewide-registrations-changes-by-party.png

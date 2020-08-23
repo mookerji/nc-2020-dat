@@ -2,401 +2,500 @@ counties:
 - county_name: alamance
   party_change_graph: assets/images/county-registration-changes/alamance.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/alamance.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/alamance.png
   party_registration_graph: assets/images/county-registration-by-party/alamance.png
 - county_name: alexander
   party_change_graph: assets/images/county-registration-changes/alexander.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/alexander.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/alexander.png
   party_registration_graph: assets/images/county-registration-by-party/alexander.png
 - county_name: alleghany
   party_change_graph: assets/images/county-registration-changes/alleghany.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/alleghany.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/alleghany.png
   party_registration_graph: assets/images/county-registration-by-party/alleghany.png
 - county_name: anson
   party_change_graph: assets/images/county-registration-changes/anson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/anson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/anson.png
   party_registration_graph: assets/images/county-registration-by-party/anson.png
 - county_name: ashe
   party_change_graph: assets/images/county-registration-changes/ashe.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/ashe.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/ashe.png
   party_registration_graph: assets/images/county-registration-by-party/ashe.png
 - county_name: avery
   party_change_graph: assets/images/county-registration-changes/avery.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/avery.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/avery.png
   party_registration_graph: assets/images/county-registration-by-party/avery.png
 - county_name: beaufort
   party_change_graph: assets/images/county-registration-changes/beaufort.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/beaufort.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/beaufort.png
   party_registration_graph: assets/images/county-registration-by-party/beaufort.png
 - county_name: bertie
   party_change_graph: assets/images/county-registration-changes/bertie.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/bertie.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/bertie.png
   party_registration_graph: assets/images/county-registration-by-party/bertie.png
 - county_name: bladen
   party_change_graph: assets/images/county-registration-changes/bladen.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/bladen.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/bladen.png
   party_registration_graph: assets/images/county-registration-by-party/bladen.png
 - county_name: brunswick
   party_change_graph: assets/images/county-registration-changes/brunswick.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/brunswick.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/brunswick.png
   party_registration_graph: assets/images/county-registration-by-party/brunswick.png
 - county_name: buncombe
   party_change_graph: assets/images/county-registration-changes/buncombe.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/buncombe.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/buncombe.png
   party_registration_graph: assets/images/county-registration-by-party/buncombe.png
 - county_name: burke
   party_change_graph: assets/images/county-registration-changes/burke.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/burke.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/burke.png
   party_registration_graph: assets/images/county-registration-by-party/burke.png
 - county_name: cabarrus
   party_change_graph: assets/images/county-registration-changes/cabarrus.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/cabarrus.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/cabarrus.png
   party_registration_graph: assets/images/county-registration-by-party/cabarrus.png
 - county_name: caldwell
   party_change_graph: assets/images/county-registration-changes/caldwell.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/caldwell.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/caldwell.png
   party_registration_graph: assets/images/county-registration-by-party/caldwell.png
 - county_name: camden
   party_change_graph: assets/images/county-registration-changes/camden.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/camden.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/camden.png
   party_registration_graph: assets/images/county-registration-by-party/camden.png
 - county_name: carteret
   party_change_graph: assets/images/county-registration-changes/carteret.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/carteret.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/carteret.png
   party_registration_graph: assets/images/county-registration-by-party/carteret.png
 - county_name: caswell
   party_change_graph: assets/images/county-registration-changes/caswell.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/caswell.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/caswell.png
   party_registration_graph: assets/images/county-registration-by-party/caswell.png
 - county_name: catawba
   party_change_graph: assets/images/county-registration-changes/catawba.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/catawba.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/catawba.png
   party_registration_graph: assets/images/county-registration-by-party/catawba.png
 - county_name: chatham
   party_change_graph: assets/images/county-registration-changes/chatham.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/chatham.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/chatham.png
   party_registration_graph: assets/images/county-registration-by-party/chatham.png
 - county_name: cherokee
   party_change_graph: assets/images/county-registration-changes/cherokee.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/cherokee.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/cherokee.png
   party_registration_graph: assets/images/county-registration-by-party/cherokee.png
 - county_name: chowan
   party_change_graph: assets/images/county-registration-changes/chowan.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/chowan.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/chowan.png
   party_registration_graph: assets/images/county-registration-by-party/chowan.png
 - county_name: clay
   party_change_graph: assets/images/county-registration-changes/clay.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/clay.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/clay.png
   party_registration_graph: assets/images/county-registration-by-party/clay.png
 - county_name: cleveland
   party_change_graph: assets/images/county-registration-changes/cleveland.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/cleveland.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/cleveland.png
   party_registration_graph: assets/images/county-registration-by-party/cleveland.png
 - county_name: columbus
   party_change_graph: assets/images/county-registration-changes/columbus.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/columbus.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/columbus.png
   party_registration_graph: assets/images/county-registration-by-party/columbus.png
 - county_name: craven
   party_change_graph: assets/images/county-registration-changes/craven.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/craven.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/craven.png
   party_registration_graph: assets/images/county-registration-by-party/craven.png
 - county_name: cumberland
   party_change_graph: assets/images/county-registration-changes/cumberland.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/cumberland.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/cumberland.png
   party_registration_graph: assets/images/county-registration-by-party/cumberland.png
 - county_name: currituck
   party_change_graph: assets/images/county-registration-changes/currituck.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/currituck.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/currituck.png
   party_registration_graph: assets/images/county-registration-by-party/currituck.png
 - county_name: dare
   party_change_graph: assets/images/county-registration-changes/dare.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/dare.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/dare.png
   party_registration_graph: assets/images/county-registration-by-party/dare.png
 - county_name: davidson
   party_change_graph: assets/images/county-registration-changes/davidson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/davidson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/davidson.png
   party_registration_graph: assets/images/county-registration-by-party/davidson.png
 - county_name: davie
   party_change_graph: assets/images/county-registration-changes/davie.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/davie.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/davie.png
   party_registration_graph: assets/images/county-registration-by-party/davie.png
 - county_name: duplin
   party_change_graph: assets/images/county-registration-changes/duplin.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/duplin.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/duplin.png
   party_registration_graph: assets/images/county-registration-by-party/duplin.png
 - county_name: durham
   party_change_graph: assets/images/county-registration-changes/durham.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/durham.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/durham.png
   party_registration_graph: assets/images/county-registration-by-party/durham.png
 - county_name: edgecombe
   party_change_graph: assets/images/county-registration-changes/edgecombe.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/edgecombe.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/edgecombe.png
   party_registration_graph: assets/images/county-registration-by-party/edgecombe.png
 - county_name: forsyth
   party_change_graph: assets/images/county-registration-changes/forsyth.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/forsyth.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/forsyth.png
   party_registration_graph: assets/images/county-registration-by-party/forsyth.png
 - county_name: franklin
   party_change_graph: assets/images/county-registration-changes/franklin.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/franklin.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/franklin.png
   party_registration_graph: assets/images/county-registration-by-party/franklin.png
 - county_name: gaston
   party_change_graph: assets/images/county-registration-changes/gaston.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/gaston.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/gaston.png
   party_registration_graph: assets/images/county-registration-by-party/gaston.png
 - county_name: gates
   party_change_graph: assets/images/county-registration-changes/gates.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/gates.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/gates.png
   party_registration_graph: assets/images/county-registration-by-party/gates.png
 - county_name: graham
   party_change_graph: assets/images/county-registration-changes/graham.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/graham.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/graham.png
   party_registration_graph: assets/images/county-registration-by-party/graham.png
 - county_name: granville
   party_change_graph: assets/images/county-registration-changes/granville.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/granville.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/granville.png
   party_registration_graph: assets/images/county-registration-by-party/granville.png
 - county_name: greene
   party_change_graph: assets/images/county-registration-changes/greene.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/greene.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/greene.png
   party_registration_graph: assets/images/county-registration-by-party/greene.png
 - county_name: guilford
   party_change_graph: assets/images/county-registration-changes/guilford.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/guilford.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/guilford.png
   party_registration_graph: assets/images/county-registration-by-party/guilford.png
 - county_name: halifax
   party_change_graph: assets/images/county-registration-changes/halifax.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/halifax.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/halifax.png
   party_registration_graph: assets/images/county-registration-by-party/halifax.png
 - county_name: harnett
   party_change_graph: assets/images/county-registration-changes/harnett.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/harnett.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/harnett.png
   party_registration_graph: assets/images/county-registration-by-party/harnett.png
 - county_name: haywood
   party_change_graph: assets/images/county-registration-changes/haywood.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/haywood.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/haywood.png
   party_registration_graph: assets/images/county-registration-by-party/haywood.png
 - county_name: henderson
   party_change_graph: assets/images/county-registration-changes/henderson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/henderson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/henderson.png
   party_registration_graph: assets/images/county-registration-by-party/henderson.png
 - county_name: hertford
   party_change_graph: assets/images/county-registration-changes/hertford.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/hertford.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/hertford.png
   party_registration_graph: assets/images/county-registration-by-party/hertford.png
 - county_name: hoke
   party_change_graph: assets/images/county-registration-changes/hoke.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/hoke.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/hoke.png
   party_registration_graph: assets/images/county-registration-by-party/hoke.png
 - county_name: hyde
   party_change_graph: assets/images/county-registration-changes/hyde.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/hyde.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/hyde.png
   party_registration_graph: assets/images/county-registration-by-party/hyde.png
 - county_name: iredell
   party_change_graph: assets/images/county-registration-changes/iredell.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/iredell.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/iredell.png
   party_registration_graph: assets/images/county-registration-by-party/iredell.png
 - county_name: jackson
   party_change_graph: assets/images/county-registration-changes/jackson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/jackson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/jackson.png
   party_registration_graph: assets/images/county-registration-by-party/jackson.png
 - county_name: johnston
   party_change_graph: assets/images/county-registration-changes/johnston.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/johnston.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/johnston.png
   party_registration_graph: assets/images/county-registration-by-party/johnston.png
 - county_name: jones
   party_change_graph: assets/images/county-registration-changes/jones.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/jones.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/jones.png
   party_registration_graph: assets/images/county-registration-by-party/jones.png
 - county_name: lee
   party_change_graph: assets/images/county-registration-changes/lee.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/lee.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/lee.png
   party_registration_graph: assets/images/county-registration-by-party/lee.png
 - county_name: lenoir
   party_change_graph: assets/images/county-registration-changes/lenoir.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/lenoir.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/lenoir.png
   party_registration_graph: assets/images/county-registration-by-party/lenoir.png
 - county_name: lincoln
   party_change_graph: assets/images/county-registration-changes/lincoln.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/lincoln.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/lincoln.png
   party_registration_graph: assets/images/county-registration-by-party/lincoln.png
 - county_name: macon
   party_change_graph: assets/images/county-registration-changes/macon.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/macon.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/macon.png
   party_registration_graph: assets/images/county-registration-by-party/macon.png
 - county_name: madison
   party_change_graph: assets/images/county-registration-changes/madison.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/madison.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/madison.png
   party_registration_graph: assets/images/county-registration-by-party/madison.png
 - county_name: martin
   party_change_graph: assets/images/county-registration-changes/martin.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/martin.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/martin.png
   party_registration_graph: assets/images/county-registration-by-party/martin.png
 - county_name: mcdowell
   party_change_graph: assets/images/county-registration-changes/mcdowell.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/mcdowell.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/mcdowell.png
   party_registration_graph: assets/images/county-registration-by-party/mcdowell.png
 - county_name: mecklenburg
   party_change_graph: assets/images/county-registration-changes/mecklenburg.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/mecklenburg.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/mecklenburg.png
   party_registration_graph: assets/images/county-registration-by-party/mecklenburg.png
 - county_name: mitchell
   party_change_graph: assets/images/county-registration-changes/mitchell.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/mitchell.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/mitchell.png
   party_registration_graph: assets/images/county-registration-by-party/mitchell.png
 - county_name: montgomery
   party_change_graph: assets/images/county-registration-changes/montgomery.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/montgomery.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/montgomery.png
   party_registration_graph: assets/images/county-registration-by-party/montgomery.png
 - county_name: moore
   party_change_graph: assets/images/county-registration-changes/moore.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/moore.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/moore.png
   party_registration_graph: assets/images/county-registration-by-party/moore.png
 - county_name: nash
   party_change_graph: assets/images/county-registration-changes/nash.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/nash.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/nash.png
   party_registration_graph: assets/images/county-registration-by-party/nash.png
-- county_name: new hanover
-  party_change_graph: assets/images/county-registration-changes/new hanover.png
-  party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/new
-    hanover.png
-  party_registration_graph: assets/images/county-registration-by-party/new hanover.png
+- county_name: new_hanover
+  party_change_graph: assets/images/county-registration-changes/new_hanover.png
+  party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/new_hanover.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/new_hanover.png
+  party_registration_graph: assets/images/county-registration-by-party/new_hanover.png
 - county_name: northampton
   party_change_graph: assets/images/county-registration-changes/northampton.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/northampton.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/northampton.png
   party_registration_graph: assets/images/county-registration-by-party/northampton.png
 - county_name: onslow
   party_change_graph: assets/images/county-registration-changes/onslow.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/onslow.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/onslow.png
   party_registration_graph: assets/images/county-registration-by-party/onslow.png
 - county_name: orange
   party_change_graph: assets/images/county-registration-changes/orange.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/orange.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/orange.png
   party_registration_graph: assets/images/county-registration-by-party/orange.png
 - county_name: pamlico
   party_change_graph: assets/images/county-registration-changes/pamlico.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/pamlico.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/pamlico.png
   party_registration_graph: assets/images/county-registration-by-party/pamlico.png
 - county_name: pasquotank
   party_change_graph: assets/images/county-registration-changes/pasquotank.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/pasquotank.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/pasquotank.png
   party_registration_graph: assets/images/county-registration-by-party/pasquotank.png
 - county_name: pender
   party_change_graph: assets/images/county-registration-changes/pender.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/pender.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/pender.png
   party_registration_graph: assets/images/county-registration-by-party/pender.png
 - county_name: perquimans
   party_change_graph: assets/images/county-registration-changes/perquimans.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/perquimans.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/perquimans.png
   party_registration_graph: assets/images/county-registration-by-party/perquimans.png
 - county_name: person
   party_change_graph: assets/images/county-registration-changes/person.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/person.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/person.png
   party_registration_graph: assets/images/county-registration-by-party/person.png
 - county_name: pitt
   party_change_graph: assets/images/county-registration-changes/pitt.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/pitt.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/pitt.png
   party_registration_graph: assets/images/county-registration-by-party/pitt.png
 - county_name: polk
   party_change_graph: assets/images/county-registration-changes/polk.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/polk.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/polk.png
   party_registration_graph: assets/images/county-registration-by-party/polk.png
 - county_name: randolph
   party_change_graph: assets/images/county-registration-changes/randolph.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/randolph.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/randolph.png
   party_registration_graph: assets/images/county-registration-by-party/randolph.png
 - county_name: richmond
   party_change_graph: assets/images/county-registration-changes/richmond.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/richmond.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/richmond.png
   party_registration_graph: assets/images/county-registration-by-party/richmond.png
 - county_name: robeson
   party_change_graph: assets/images/county-registration-changes/robeson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/robeson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/robeson.png
   party_registration_graph: assets/images/county-registration-by-party/robeson.png
 - county_name: rockingham
   party_change_graph: assets/images/county-registration-changes/rockingham.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/rockingham.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/rockingham.png
   party_registration_graph: assets/images/county-registration-by-party/rockingham.png
 - county_name: rowan
   party_change_graph: assets/images/county-registration-changes/rowan.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/rowan.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/rowan.png
   party_registration_graph: assets/images/county-registration-by-party/rowan.png
 - county_name: rutherford
   party_change_graph: assets/images/county-registration-changes/rutherford.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/rutherford.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/rutherford.png
   party_registration_graph: assets/images/county-registration-by-party/rutherford.png
 - county_name: sampson
   party_change_graph: assets/images/county-registration-changes/sampson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/sampson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/sampson.png
   party_registration_graph: assets/images/county-registration-by-party/sampson.png
 - county_name: scotland
   party_change_graph: assets/images/county-registration-changes/scotland.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/scotland.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/scotland.png
   party_registration_graph: assets/images/county-registration-by-party/scotland.png
 - county_name: stanly
   party_change_graph: assets/images/county-registration-changes/stanly.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/stanly.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/stanly.png
   party_registration_graph: assets/images/county-registration-by-party/stanly.png
 - county_name: stokes
   party_change_graph: assets/images/county-registration-changes/stokes.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/stokes.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/stokes.png
   party_registration_graph: assets/images/county-registration-by-party/stokes.png
 - county_name: surry
   party_change_graph: assets/images/county-registration-changes/surry.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/surry.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/surry.png
   party_registration_graph: assets/images/county-registration-by-party/surry.png
 - county_name: swain
   party_change_graph: assets/images/county-registration-changes/swain.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/swain.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/swain.png
   party_registration_graph: assets/images/county-registration-by-party/swain.png
 - county_name: transylvania
   party_change_graph: assets/images/county-registration-changes/transylvania.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/transylvania.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/transylvania.png
   party_registration_graph: assets/images/county-registration-by-party/transylvania.png
 - county_name: tyrrell
   party_change_graph: assets/images/county-registration-changes/tyrrell.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/tyrrell.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/tyrrell.png
   party_registration_graph: assets/images/county-registration-by-party/tyrrell.png
 - county_name: union
   party_change_graph: assets/images/county-registration-changes/union.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/union.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/union.png
   party_registration_graph: assets/images/county-registration-by-party/union.png
 - county_name: vance
   party_change_graph: assets/images/county-registration-changes/vance.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/vance.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/vance.png
   party_registration_graph: assets/images/county-registration-by-party/vance.png
 - county_name: wake
   party_change_graph: assets/images/county-registration-changes/wake.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/wake.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/wake.png
   party_registration_graph: assets/images/county-registration-by-party/wake.png
 - county_name: warren
   party_change_graph: assets/images/county-registration-changes/warren.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/warren.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/warren.png
   party_registration_graph: assets/images/county-registration-by-party/warren.png
 - county_name: washington
   party_change_graph: assets/images/county-registration-changes/washington.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/washington.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/washington.png
   party_registration_graph: assets/images/county-registration-by-party/washington.png
 - county_name: watauga
   party_change_graph: assets/images/county-registration-changes/watauga.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/watauga.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/watauga.png
   party_registration_graph: assets/images/county-registration-by-party/watauga.png
 - county_name: wayne
   party_change_graph: assets/images/county-registration-changes/wayne.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/wayne.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/wayne.png
   party_registration_graph: assets/images/county-registration-by-party/wayne.png
 - county_name: wilkes
   party_change_graph: assets/images/county-registration-changes/wilkes.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/wilkes.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/wilkes.png
   party_registration_graph: assets/images/county-registration-by-party/wilkes.png
 - county_name: wilson
   party_change_graph: assets/images/county-registration-changes/wilson.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/wilson.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/wilson.png
   party_registration_graph: assets/images/county-registration-by-party/wilson.png
 - county_name: yadkin
   party_change_graph: assets/images/county-registration-changes/yadkin.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/yadkin.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/yadkin.png
   party_registration_graph: assets/images/county-registration-by-party/yadkin.png
 - county_name: yancey
   party_change_graph: assets/images/county-registration-changes/yancey.png
   party_cumulative_change_graph: assets/images/cumulative-county-registration-changes/yancey.png
+  party_registration_changes_graph: assets/images/county-registration-and-changes-by-party/yancey.png
   party_registration_graph: assets/images/county-registration-by-party/yancey.png
