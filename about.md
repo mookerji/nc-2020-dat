@@ -20,7 +20,9 @@ Sources:
 
 Changelog:
 
-- **2020-08-16**
+- **2020-08-30**
+  * New graphs of absentee vote by mail requests since January 2020
+- **2020-08-22**
   * New graph: Population density and registration changes by county.
   * Consolidated party change statistics and overall registration changes.
   * Updates for 2020-08-22 voter registration statistics.
