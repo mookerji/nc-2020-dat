@@ -20,6 +20,8 @@ Sources:
 
 Changelog:
 
+- **2020-09-05**
+  * Updated for registrations and ABM up to 2020-09-05.
 - **2020-08-30**
   * New graphs of absentee vote by mail requests since January 2020
 - **2020-08-22**
