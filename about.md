@@ -21,6 +21,8 @@ Sources:
 
 Changelog:
 
+- **2020-09-06**
+  * ABM demographics and ABM/registration summaries until current date.
 - **2020-09-05**
   * Updated for registrations and ABM up to 2020-09-05.
   * Added voting and volunteering information page, one-stop early voting map.
