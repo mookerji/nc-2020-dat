@@ -33,4 +33,6 @@ title: Statewide Overview
 
 ## [Maps](#maps)
 
+### Most Registrants By County
+
 {% include images/bokeh/state-party-registration-change.html %}

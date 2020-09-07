@@ -6,7 +6,7 @@ permalink: /vote
 
 *We make no claims about the accuracy or recency of the information below. When
 in doubt, visit the [NCSBE][ncsbe]. See also
-[https://www.ncvoter.org/](https://www.ncvoter.org/.) and [vote.org][vote.org].*
+[ncvoter.org](https://www.ncvoter.org/.) and [vote.org][vote.org].*
 
 [vote.org]: https://www.vote.org/state/north-carolina/
 
