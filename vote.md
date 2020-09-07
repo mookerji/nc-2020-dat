@@ -37,6 +37,7 @@ From [Mecklenburg County BOE][dates].
 
 [register]: https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx
 [register1]: https://www.ncsbe.gov/registering/how-register
+[special_care]: https://ncgovote.org/registration_tips.html
 
 ### Absentee By-Mail Voting
 
