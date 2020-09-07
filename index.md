@@ -27,8 +27,14 @@ title: Statewide Overview
 
 ## [Absentee/VBM Requests](#absentee)
 
+### By Week
+
 ![vbm_demographics]({{ site.data.state.state.statewide_vbm_requests_by_demographic }} ){:class="img-responsive"}
 <br/><br/>
+![vbm_demographics]({{ site.data.state.state.statewide_vbm_requests_by_demographic_weekly }} ){:class="img-responsive"}
+
+### By County
+
 ![vbm county]({{ site.data.state.state.statewide_vbm_requests_by_county }} ){:class="img-responsive"}
 
 ## [Maps](#maps)
