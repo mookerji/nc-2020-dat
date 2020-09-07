@@ -66,6 +66,12 @@ check your voting site location [here][oss].
 
 ## Volunteering
 
+### Voter Protection
+
+Signup to be a **poll observer**, **absentee ballot count observer**, and/or
+**hotline volunteer** [via the NCDP][vopro_dnc] (link to NCDP vopro
+[briefing][vopro_briefing]).
+
 ### Poll Worker
 
 Sign up to be a [poll worker][form_signup].
@@ -77,12 +83,6 @@ Sign up to be a [poll worker][form_signup].
 </div>
 
 [form_signup]: https://www.ncsbe.gov/about-elections/get-involved/become-election-official
-
-### Voter Protection
-
-Signup to be a poll observer, absentee ballot count observer, and/or hotline
-volunteer [via the NCDP][vopro_dnc] (link to NCDP vopro
-[briefing][vopro_briefing]).
 
 [vopro_dnc]: https://ncdemslive.cp.bsd.net/page/signup/vopro-volunteer-survey
 [vopro_briefing]: https://www.mobilize.us/ncdems/event/308065/
