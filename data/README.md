@@ -31,6 +31,10 @@ NC voter registrations:
 
 - [registration](registration/)
 
+Shapefiles:
+
+- https://www.ncleg.gov/Redistricting
+
 ### References
 
 - https://electionlab.mit.edu/research/voter-turnout
