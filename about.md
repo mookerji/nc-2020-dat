@@ -4,7 +4,7 @@ title: About
 permalink: /about
 ---
 
-Tracking the state of county voter registrations in North Carolina for the 2020
+Tracks the state of county voter registrations in North Carolina for the 2020
 General Election.
 
 ### Methodology
@@ -13,6 +13,12 @@ General Election.
 - Voting eligible determined from the all adults (natural-born and naturalized)
   over age of 18, based on the [2018 ACS Survey][acs]. We do not include margins
   of error.
+
+For more details, see the [Github repo][repo]. We generate all graphs and
+summary statistics from this [Jupyter notebook][notebook].
+
+[repo]: https://github.com/mookerji/nc-2020-dat
+[notebook]: https://github.com/mookerji/nc-2020-dat/blob/master/process-data-nc-2020.ipynb
 
 ### Sources
 
