@@ -7,19 +7,20 @@ permalink: /about
 Tracking the state of county voter registrations in North Carolina for the 2020
 General Election.
 
-Methodology:
+### Methodology
 
 - New voter registrations measured from 02-28-2020.
 - Voting eligible determined from the all adults (natural-born and naturalized)
   over age of 18, based on the [2018 ACS Survey][acs]. We do not include margins
   of error.
 
-Sources:
+### Sources
 
-- Based on open data from [NCSBE](https://vt.ncsbe.gov/RegStat/). For more
-  details, see notes on [sources][sources].
+- Based on open data from [NCSBE](https://vt.ncsbe.gov/RegStat/) and the [US
+  Census](https://data.census.gov/cedsci/). For more details, see notes on
+  [sources][sources].
 
-Changelog:
+### Changelog
 
 - **2020-09-06**
   * New tables: ABM demographics and ABM/registration summaries until current date.
@@ -36,8 +37,22 @@ Changelog:
 - **2020-08-16**
   * Draft webpage and data updates for 2020-08-15 voter registration statistics.
 
-Questions? Feedback? Concerns? Email
-[mookerji@gmail.com](mailto:mookerji@gmail.com).
+### Attribution
+
+This work is covered by the Creative Commons license [CC BY-SA
+4.0][explanation]. If reproducing any of this summary data or analysis, in part
+or in full, please cite this page (as well as the NCSBE) and provide a link to
+the [license][license].
+
+For more details, see the [license text][text].
+
+[explanation]: https://creativecommons.org/licenses/by-sa/4.0/
+[license]: https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+[text]: http://creativecommons.org/licenses/by-sa/4.0
+
+### Questions? Feedback? Concerns?
+
+Email [mookerji@gmail.com](mailto:mookerji@gmail.com).
 
 [acs]: https://www.census.gov/programs-surveys/acs
 [sources]: https://github.com/mookerji/nc-2020-dat/blob/master/data/README.md
