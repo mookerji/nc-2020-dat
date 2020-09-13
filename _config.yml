@@ -8,3 +8,6 @@ header_pages:
 - demographics.md
 - counties.md
 - vote.md
+plugins:
+- jekyll-seo-tag
+google_analytics: UA-13296601-2
