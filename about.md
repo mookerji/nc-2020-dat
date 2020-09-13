@@ -25,6 +25,10 @@ summary statistics from this [Jupyter notebook][notebook].
 - Based on open data from [NCSBE](https://vt.ncsbe.gov/RegStat/) and the [US
   Census](https://data.census.gov/cedsci/). For more details, see notes on
   [sources][sources].
+- 'Under Construction' gif is from the Archive Team [GeoCities
+  archive][archive_team].
+
+[archive_team]: http://textfiles.com/underconstruction/
 
 ### Changelog
 

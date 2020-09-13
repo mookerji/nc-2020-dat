@@ -3,7 +3,7 @@ layout: page
 title: Statewide Overview
 ---
 
-![under construction](http://textfiles.com/underconstruction/mamagnolia_acresunderconstruction.gif){:class="img-responsive"}
+![under construction](assets/images/mamagnolia_acresunderconstruction.gif){:class="img-responsive"}
 
 ## [Summary](#summary)
 
