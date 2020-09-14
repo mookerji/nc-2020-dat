@@ -5,6 +5,12 @@ state:
   party_registration_graph: assets/images/statewide-registrations-by-party.png
   statewide_registrations_by_county_density: assets/images/statewide-registrations-by-county-density.png
   statewide_registrations_changes_by_party: assets/images/statewide-registrations-changes-by-party.png
+  statewide_vbm_rejected_by_demographic: assets/images/statewide-vbm-rejected-by-demographic.png
+  statewide_vbm_rejected_by_demographic_weekly: assets/images/statewide-vbm-rejected-by-demographic-weekly.png
+  statewide_vbm_rejections_by_county: assets/images/statewide-vbm-rejections-by-county.png
   statewide_vbm_requests_by_county: assets/images/statewide-vbm-requests-by-county.png
   statewide_vbm_requests_by_demographic: assets/images/statewide-vbm-requests-by-demographic.png
   statewide_vbm_requests_by_demographic_weekly: assets/images/statewide-vbm-requests-by-demographic-weekly.png
+  statewide_vbm_submissions_by_county: assets/images/statewide-vbm-submissions-by-county.png
+  statewide_vbm_submissions_by_demographic: assets/images/statewide-vbm-submissions-by-demographic.png
+  statewide_vbm_submissions_by_demographic_weekly: assets/images/statewide-vbm-submissions-by-demographic-weekly.png

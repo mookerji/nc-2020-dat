@@ -37,7 +37,27 @@ title: Statewide Overview
 
 ![vbm county]({{ site.data.state.state.statewide_vbm_requests_by_county }} ){:class="img-responsive"}
 
-## [Maps](#maps)
+## [Absentee/VBM Submissions](#submissions)
+
+### [By Week - Submitted](#submitted-by-week)
+
+![vbm_demographics]({{ site.data.state.state.statewide_vbm_submissions_by_demographic }} ){:class="img-responsive"}
+<br/><br/>
+![vbm_demographics]({{ site.data.state.state.statewide_vbm_submissions_by_demographic_weekly }} ){:class="img-responsive"}
+
+### [By Week - Returned For Correction / Not Accepted](#rejected-by-week)
+
+![vbm_demographics]({{ site.data.state.state.statewide_vbm_rejected_by_demographic }} ){:class="img-responsive"}
+<br/><br/>
+![vbm_demographics]({{ site.data.state.state.statewide_vbm_rejected_by_demographic_weekly }} ){:class="img-responsive"}
+
+### [By County](#submitted-by-county)
+
+![registration count and density]({{ site.data.state.state.statewide_vbm_submissions_by_county }} ){:class="img-responsive"}
+<br/><br/>
+![registration count and density]({{ site.data.state.state.statewide_vbm_rejections_by_county}} ){:class="img-responsive"}
+
+## Maps
 
 ### Most Registrants By County
 
