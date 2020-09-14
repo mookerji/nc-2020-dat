@@ -32,6 +32,10 @@ summary statistics from this [Jupyter notebook][notebook].
 
 ### Changelog
 
+- **2020-09-13**
+  * New summary table rows: ABM submissions and rejects.
+  * New table: Top demographics and counties for ABM submissions and rejects.
+  * New graphs: weekly and per-county ABM submissions and rejects.
 - **2020-09-06**
   * New tables: ABM demographics and ABM/registration summaries until current date.
   * New graph: weekly ABM registrations by demographic.
