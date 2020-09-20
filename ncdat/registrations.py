@@ -1,31 +1,36 @@
 import click
-import pandas
+import pandas as pd
 
 import sys
 
-PARTIES = ['registered.democrats(count)',
-           'registered.republicans(count)',
-           'registered.libertarians(count)',
-           'registered.green(count)',
-           'registered.constitution(count)',
-           'registered.unaffiliated(count)',
-           'registered.total(count)',]
+PARTIES = [
+    'registered.democrats(count)',
+    'registered.republicans(count)',
+    'registered.libertarians(count)',
+    'registered.green(count)',
+    'registered.constitution(count)',
+    'registered.unaffiliated(count)',
+    'registered.total(count)',
+]
 
-rename = {'Democrats': 'registered.democrats(count)',
-          'Republicans': 'registered.republicans(count)',
-          'Libertarians': 'registered.libertarians(count)',
-          'Green': 'registered.green(count)',
-          'Constitution': 'registered.constitution(count)',
-          'Unaffiliated': 'registered.unaffiliated(count)',
-          'White': 'registered.white(count)',
-          'Black': 'registered.black(count)',
-          'AmericanIndian': 'registered.american_indian(count)',
-          'Other': 'registered.other(count)',
-          'Hispanic': 'registered.hispanic(count)',
-          'Male': 'registered.male(count)',
-          'Female': 'registered.female(count)',
-          'UnDisclosedGender': 'registered.undisclosed_gender(count)',
-          'Total': 'registered.total(count)',}
+rename = {
+    'Democrats': 'registered.democrats(count)',
+    'Republicans': 'registered.republicans(count)',
+    'Libertarians': 'registered.libertarians(count)',
+    'Green': 'registered.green(count)',
+    'Constitution': 'registered.constitution(count)',
+    'Unaffiliated': 'registered.unaffiliated(count)',
+    'White': 'registered.white(count)',
+    'Black': 'registered.black(count)',
+    'AmericanIndian': 'registered.american_indian(count)',
+    'Other': 'registered.other(count)',
+    'Hispanic': 'registered.hispanic(count)',
+    'Male': 'registered.male(count)',
+    'Female': 'registered.female(count)',
+    'UnDisclosedGender': 'registered.undisclosed_gender(count)',
+    'Total': 'registered.total(count)',
+}
+
 
 def registrations_to_csv(year='2020'):
     files = glob.glob('data/registration/*.json')
@@ -38,12 +43,17 @@ def registrations_to_csv(year='2020'):
         data.append(df.rename(columns=rename))
     return pd.concat(data)
 
+
 @click.command()
-@click.option('--year', default=2020)
-def main(year):
+def main():
+    # 2020
     registrations = registrations_to_csv()
     registrations.to_csv('data/registrations2020.csv', index=False)
-    registrations.head()
+    # 2016?
+    registrations_2016 = registrations_to_csv(year='2016')
+    registrations_2016.to_csv('data/registrations2016.csv', index=False)
+    registrations_2016.head()
+
 
 if __name__ == '__main__':
     sys.exit(main())

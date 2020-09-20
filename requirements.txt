@@ -1,4 +1,10 @@
+bokeh
+click
+fiona
 geopandas
 matplotlib
+numpy
 pandas
 seaborn
+yaml
+yapf
