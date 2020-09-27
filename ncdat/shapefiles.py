@@ -7,8 +7,8 @@ SHAPEFILE_NAME = "data/shapefiles/NC_Counties-shp/counties.shp"
 
 
 def load_shapefile_counties(filename=SHAPEFILE_NAME):
-    nc_shape = gpd.read_file(filename).set_index(
-        'CO_NAME', drop=False).rename(columns={'CO_NAME': 'CountyName'})
+    nc_shape \
+      = gpd.read_file(filename).set_index('CO_NAME', drop=False).rename(columns={'CO_NAME': 'CountyName'})
     nc_shape['land.area(square_miles)'] = nc_shape['ACRES'] / 640.
     return nc_shape
 

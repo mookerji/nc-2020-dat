@@ -7,12 +7,14 @@ DEFAULT_ONE_STOP_FILE = 'data/one-stop-absentee/StatewideList.txt'
 
 
 def read_one_stop(filename=DEFAULT_ONE_STOP_FILE):
-    df = pd.read_csv(filename,
-                     header=None,
-                     error_bad_lines=False,
-                     engine='c',
-                     sep='\t',
-                     parse_dates=[6],)
+    df = pd.read_csv(
+        filename,
+        header=None,
+        error_bad_lines=False,
+        engine='c',
+        sep='\t',
+        parse_dates=[6],
+    )
     names = {0: 'election_date', 1: 'CountyName', 3: 'LocationName', 4: 'Address1', \
              5: 'Address2', 6: 'date', 7: 'hours',}
     df = df.rename(columns=names)
