@@ -1,0 +1,24 @@
+version: 2.1
+jobs:
+  fetch_build:
+    docker:
+    - image: cimg/python:3.8.5
+    steps:
+    - checkout
+    - run: python --version
+    - run: pip3 install -r requirements.txt
+    - run: mkdir -p limbo/
+    - run: bash scripts/fetch.sh
+
+workflows:
+  version: 2
+  nightly:
+    triggers:
+    - schedule:
+        cron: "0 0 * * *"
+        filters:
+          branches:
+            only:
+            - master
+    jobs:
+    - fetch_build
