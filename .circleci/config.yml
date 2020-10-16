@@ -6,17 +6,7 @@ jobs:
     steps:
     - checkout
     - run: python --version
-    # Deal with Python
-    - restore_cache:
-        keys:
-          - pip-packages-v1-{{ .Branch }}-{{ checksum "requirements.txt" }}
-    - save_cache:
-        paths:
-        - "~/.cache/pip"
-        key:  pip-packages-v1-{{ .Branch }}-{{ checksum "requirements.txt" }}
     - run: pip3 install -r requirements.txt
-
-    # Run the code
     - run: mkdir -p limbo/
     - run: bash scripts/fetch.sh
     - run: bash scripts/make-data.sh
