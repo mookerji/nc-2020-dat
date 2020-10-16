@@ -6,5 +6,4 @@ matplotlib
 numpy
 pandas
 seaborn
-yaml
 yapf
