@@ -12,10 +12,17 @@ jobs:
 
 workflows:
   version: 2
+  commit:
+    jobs:
+      - fetch_build:
+          filters:
+            branches:
+              only:
+                - master
   nightly:
     triggers:
     - schedule:
-        cron: "0 0 * * *"
+        cron: "0 * * * *"
         filters:
           branches:
             only:
