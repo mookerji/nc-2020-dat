@@ -37,7 +37,7 @@ def read_one_stop(filename=DEFAULT_ONE_STOP_FILE):
 def main():
     one_stop = read_one_stop()
     ts = pd.Timestamp.now().isoformat()
-    one_stop.to_csv(f'data/one-stop-absentee-{ts}.csv', index=False)
+    one_stop.to_csv(f'data/one-stop-absentee.csv', index=False)
     one_stop.to_csv(f'limbo/one-stop-absentee-{ts}.csv', index=False)
     return one_stop
 
