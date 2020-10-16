@@ -26,24 +26,26 @@ def main(filename, county, party):
         prefix = county
     else:
         prefix = 'state'
-
-    absentee.dropna(subset=['ballot_rtn_status', 'ballot_mail_street_address'], inplace=True)
+    # Only mail ballots
+    absentee = absentee[absentee.ballot_req_type == 'MAIL']
+    absentee.dropna(subset=['ballot_rtn_status'], inplace=True)
     absentee \
       = absentee[~absentee.ballot_rtn_status.str.contains('ACCEPTED') & (absentee.party == party)]
-    address \
-      = absentee.ballot_mail_street_address.apply(lambda s: s if s.rfind('#') == -1 else s[:s.rfind('#')].rstrip())
 
-    absentee['location'] \
-      = address + ', ' + absentee.ballot_mail_city + ', ' +  absentee.ballot_mail_state + " " + absentee.ballot_mail_zip.round().astype(str)
-    try:
-        absentee['precinct'] = absentee.precinct_desc.str.lstrip('PCT').dropna().astype(int)
-    except:
-        absentee['precinct'] = absentee.precinct_desc
-    absentee.index.name = 'row_number'
+    #absentee.dropna(subset=['ballot_mail_street_address'], inplace=True)
+    # address \
+    #   = absentee.ballot_mail_street_address.apply(lambda s: s if s.rfind('#') == -1 else s[:s.rfind('#')].rstrip())
+    # absentee['location'] \
+    #   = address + ', ' + absentee.ballot_mail_city + ', ' +  absentee.ballot_mail_state + " " + absentee.ballot_mail_zip.round().astype(str)
+    # try:
+    #     absentee['precinct'] = absentee.precinct_desc.str.lstrip('PCT').dropna().astype(int)
+    # except:
+    #     absentee['precinct'] = absentee.precinct_desc
+    # absentee.index.name = 'row_number'
 
-    # Output
-    cols = ['race', 'age_group', 'gender', 'location', 'ballot_rtn_status']
-    absentee[cols].to_csv(f'limbo/{prefix}_rejected_all.csv')
+    # # Output
+    # cols = ['race', 'age_group', 'gender', 'location', 'ballot_rtn_status']
+    # absentee[cols].to_csv(f'limbo/{prefix}_rejected_all.csv')
 
     # Precints
 
@@ -68,6 +70,7 @@ def main(filename, county, party):
     zips['quantile'] \
       = pd.cut(zips['count'], bins, duplicates='drop').astype('str')
     ts = pd.Timestamp.now().isoformat()
+    prefix = party.lower()
     to_kml(zips[['count', 'quantile', 'geometry']], f'limbo/{prefix}_rejected_zip_{ts}.kml')
 
 
