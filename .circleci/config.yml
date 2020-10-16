@@ -10,6 +10,12 @@ jobs:
     - run: mkdir -p limbo/
     - run: bash scripts/fetch.sh
     - run: bash scripts/make-data.sh
+    - run:
+        command: |
+          mkdir -p /tmp/artifacts
+          cp -r limbo/*.kml /tmp/artifacts
+    - store_artifacts:
+        path: /tmp/artifacts
 
 workflows:
   version: 2
