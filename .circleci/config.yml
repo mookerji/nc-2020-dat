@@ -12,6 +12,7 @@ jobs:
     - run: bash scripts/make-data.sh
     - run:
         command: |
+          ls -lah limbo/ && rm -rf limbo/absentee_20201103*.csv
           mkdir -p /tmp/artifacts
           cp -r limbo/*.kml /tmp/artifacts
           cp -r limbo/*.csv /tmp/artifacts
