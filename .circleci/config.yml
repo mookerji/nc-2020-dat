@@ -14,6 +14,7 @@ jobs:
         command: |
           mkdir -p /tmp/artifacts
           cp -r limbo/*.kml /tmp/artifacts
+          cp -r limbo/*.csv /tmp/artifacts
     - store_artifacts:
         path: /tmp/artifacts
 
