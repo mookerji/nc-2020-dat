@@ -9,6 +9,7 @@ jobs:
     - run: pip3 install -r requirements.txt
     - run: mkdir -p limbo/
     - run: bash scripts/fetch.sh
+    - run: bash scripts/make-data.sh
 
 workflows:
   version: 2

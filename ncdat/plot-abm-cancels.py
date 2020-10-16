@@ -15,9 +15,10 @@ gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'
 
 @click.command()
 @click.option('-f', '--filename', type=str)
+@click.option('-z', '--zip-file', type=click.Path(exists=True))
 @click.option('-c', '--county', type=str, default=None)
 @click.option('-p', '--party', type=str, default='Democrats')
-def main(filename, county, party):
+def main(filename, zip_file, county, party):
 
     # Get absentee
     absentee = read_absentee_voter_file(filename)
@@ -63,7 +64,7 @@ def main(filename, county, party):
 
     # Zipcodes
     count_by_zip_code = absentee.groupby(by='voter_zip').county_desc.count()
-    zips = read_zip_codes()
+    zips = read_zip_codes(zip_file)
     zips['count'] = count_by_zip_code
     zips.dropna(subset=['count'], inplace=True)
     bins = [0, 5, 20, 40, 60, 200]
