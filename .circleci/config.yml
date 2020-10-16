@@ -6,7 +6,18 @@ jobs:
     steps:
     - checkout
     - run: python --version
+    # Deal with Python
+    - restore_cache:
+      keys:
+      - pip-packages-v1-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
+      - pip-packages-v1-{{ .Branch }}-
+      - pip-packages-v1-
+  - save_cache:
+      paths:
+      - ~/.local/share/virtualenvs/venv
+      key: pip-packages-v1-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
     - run: pip3 install -r requirements.txt
+    # Run the code
     - run: mkdir -p limbo/
     - run: bash scripts/fetch.sh
     - run: bash scripts/make-data.sh
@@ -23,11 +34,11 @@ workflows:
   version: 2
   commit:
     jobs:
-      - fetch_build:
-          filters:
-            branches:
-              only:
-                - master
+    - fetch_build:
+        filters:
+          branches:
+            only:
+            - master
   nightly:
     triggers:
     - schedule:
