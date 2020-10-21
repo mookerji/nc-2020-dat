@@ -3,6 +3,10 @@
 # Download one-stop locations
 curl https://vt.ncsbe.gov/OSSite/GetStatewideList/ > ./data/one-stop-absentee/StatewideList.txt
 
+# Download party change list
+curl -vk https://dl.ncsbe.gov.s3.amazonaws.com/data/PartyChange/2020_party_change_list.csv \
+     > data/changes/2020_party_change_list.csv
+
 # Download
 curl -k https://dl.ncsbe.gov.s3.amazonaws.com/ENRS/2020_11_03/absentee_demo_stats_20201103.csv > limbo/absentee_demo_stats_20201103.csv
 
