@@ -44,7 +44,7 @@ def plot_one_stop(zips, absentee, party):
     absentee = absentee[absentee.ballot_req_type == 'ONE-STOP']
     count_by_zip_code = absentee.groupby(by='voter_zip').county_desc.count()
     zips['total_cast'] = count_by_zip_code
-    bins = [1000, 4000, 8000, 16000]
+    bins = [0, 1000, 4000, 8000, 16000]
     zips['quantile'] \
       = pd.cut(zips['total_cast'], bins, duplicates='drop').astype('str')
     ts = pd.Timestamp.now().isoformat()

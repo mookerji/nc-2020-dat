@@ -59,6 +59,15 @@ title: Statewide Overview
 
 ## Maps
 
+### One-Stop Absentee Ballots Cast
+
+<br/><br/>
+<div style="text-align:center">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1tP3laEdwClVXR8j8QFNwipqjyYa8elV8" width="640" height="480" frameborder="0" style="border:0;" allowfullscreen="" align="middle">
+    </iframe>
+</div>
+<br/><br/>
+
 ### Non-Accepted/Rejected Absentee Ballots
 
 <br/><br/>
