@@ -32,6 +32,9 @@ summary statistics from this [Jupyter notebook][notebook].
 
 ### Changelog
 
+- **2020-10-20**
+  * New map: replaced registration map with interactive Google Map of rejected
+    absentee ballots.
 - **2020-09-13**
   * New summary table rows: ABM submissions and rejects.
   * New table: Top demographics and counties for ABM submissions and rejects.
