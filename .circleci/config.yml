@@ -29,7 +29,7 @@ workflows:
             only:
             - master
   nightly:
-    triggers:n
+    triggers:
     - schedule:
         cron: "0 */4 * * *"
         filters:
