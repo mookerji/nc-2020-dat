@@ -13,6 +13,6 @@ permalink: /counties
 
 ### One Stop
 
-![{{ county.county_name }}](assets/images/one-stop/county-party-totals/{{ county.county_name }}.png){:class="img-responsive"}
+![{{ county.county_name }}](assets/images/one-stop/county-party-totals/{{ county.county_name | lower }}.png){:class="img-responsive"}
 
 {% endfor %}
