@@ -32,6 +32,8 @@ summary statistics from this [Jupyter notebook][notebook].
 
 ### Changelog
 
+- **2020-10-23**
+  * New map: statewide polling places and precincts.
 - **2020-10-20**
   * New map: replaced registration map with interactive Google Map of rejected
     absentee ballots.
