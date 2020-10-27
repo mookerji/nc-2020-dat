@@ -5,6 +5,7 @@ permalink: /counties
 ---
 
 {% for county in site.data.counties.counties %}
+
 ## [{{ county.county_name }}](#{{ county.county_id }})
 
 ### Registrations
