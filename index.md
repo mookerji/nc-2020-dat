@@ -59,6 +59,20 @@ title: Statewide Overview
 <br/><br/>
 ![registration count and density]({{ site.data.state.state.statewide_vbm_rejections_by_county}} ){:class="img-responsive"}
 
+## One Stop Absentee Cast
+
+### By Week
+
+![{{ county.county_name }}](assets/images/one-stop/per-week-totals.png){:class="img-responsive"}
+
+### By County
+
+![{{ county.county_name }}](assets/images/one-stop/county-party-totals.png){:class="img-responsive"}
+
+![{{ county.county_name }}](assets/images/one-stop/county-race-totals.png){:class="img-responsive"}
+
+![{{ county.county_name }}](assets/images/one-stop/county-age-totals.png){:class="img-responsive"}
+
 ## Maps
 
 ### One-Stop Absentee Ballots Cast
