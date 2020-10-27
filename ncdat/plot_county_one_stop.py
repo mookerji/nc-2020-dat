@@ -12,46 +12,68 @@ import pandas as pd
 from absentee_sent import read_absentee_voter_file
 
 
-def plot_by_party(county, results):
+def plot_by_party(county,
+                  results,
+                  horizontal=True,
+                  groupby='site_name',
+                  ylabel='Early Voting Site Name'):
     data = results.groupby(
-        by=['site_name', 'voter_party_code']).count().county_desc.unstack()
+        by=[groupby, 'voter_party_code']).count().voter_reg_num.unstack()
     data['total'] = data.sum(axis=1)
     cols = ['Democrats', 'Republicans', 'Unaffiliated', 'Other (LIB-GRE-CST)']
     colors = ['deepskyblue', 'tomato', 'slategray', 'green']
-    ax = data.sort_values(by='total').plot.barh(y=cols,
-                                                stacked=True,
-                                                color=colors)
-    ax.set_ylabel('Early Voting Site Name, Grouped By Party')
+    if horizontal:
+        ax = data.sort_values(by='total').plot.barh(y=cols,
+                                                    stacked=True,
+                                                    color=colors)
+    else:
+        ax = data.sort_values(by='total').plot.bar(y=cols,
+                                                   stacked=True,
+                                                   color=colors)
+    ax.set_ylabel(ylabel)
     ax.set_xlabel('Total')
-    ax.set_title(
-        f'One-Stop Votes, {county} County\n Ballot Status=ACCEPTED, CONFLICT, CANCELLED, NOT VOTED, WRONG VOTER'
-    )
+    ax.set_title(f'One-Stop Votes, {county} County, Grouped by Party')
     return ax.get_figure()
 
 
-def plot_by_race(county, results):
+def plot_by_race(county,
+                 results,
+                 horizontal=True,
+                 groupby='site_name',
+                 ylabel='Early Voting Site Name'):
     data = results.groupby(
-        by=['site_name', 'race']).count().county_desc.unstack()
+        by=[groupby, 'race']).count().voter_reg_num.unstack()
     data['total'] = data.sum(axis=1)
-    ax = data.sort_values(by='total').plot.barh(y=results.race.unique(),
+    if horizontal:
+        ax = data.sort_values(by='total').plot.barh(y=results.race.unique(),
                                                 stacked=True)
-    ax.set_ylabel('Early Voting Site Name')
+    else:
+        ax = data.sort_values(by='total').plot.bar(y=results.race.unique(),
+                                                stacked=True)
+    ax.set_ylabel(ylabel)
     ax.set_xlabel('Total')
     plt.legend(prop={'size': 6})
     ax.set_title(f'One-Stop Votes, {county} County, Grouped By Race')
     return ax.get_figure()
 
 
-def plot_by_age_group(county, results):
+def plot_by_age_group(county,
+                      results,
+                      horizontal=True,
+                      groupby='site_name',
+                      ylabel='Early Voting Site Name'):
     data = results.groupby(
-        by=['site_name', 'age_group']).count().county_desc.unstack()
+        by=[groupby, 'age_group']).count().voter_reg_num.unstack()
 
     to_plot = data.columns
     # TODO: remove if we coerce to strings at parse time
     #data.columns = data.columns.astype(str)
     data['total'] = data.sum(axis=1)
-    ax = data.sort_values(by='total').plot.barh(y=to_plot, stacked=True)
-    ax.set_ylabel('Early Voting Site Name')
+    if horizontal:
+        ax = data.sort_values(by='total').plot.barh(y=to_plot, stacked=True)
+    else:
+        ax = data.sort_values(by='total').plot.bar(y=to_plot, stacked=True)
+    ax.set_ylabel(ylabel)
     ax.set_xlabel('Total')
     ax.set_title(f'One-Stop Votes, {county} County, Grouped By Age Group')
     return ax.get_figure()
@@ -84,6 +106,32 @@ def plot_one_stop_counts_by_week(county, results):
     return figure
 
 
+def plot_state(results):
+    county = 'Every'
+    groupby = 'county_desc'
+    ylabel = 'County'
+    horizontal=False
+    figure = plot_by_party(county, results, horizontal, groupby, ylabel)
+    print(f'assets/images/one-stop/county-party-totals.png')
+    figure.savefig(f'assets/images/one-stop/county-party-totals.png',
+                   bbox_inches='tight')
+
+    figure = plot_by_race(county, results, horizontal, groupby, ylabel)
+    print(f'assets/images/one-stop/county-race-totals.png')
+    figure.savefig(f'assets/images/one-stop/county-race-totals.png',
+                   bbox_inches='tight')
+
+    figure = plot_by_age_group(county, results, horizontal, groupby, ylabel)
+    print(f'assets/images/one-stop/county-age-totals.png')
+    figure.savefig(f'assets/images/one-stop/county-age-totals.png',
+                   bbox_inches='tight')
+
+    figure = plot_one_stop_counts_by_week(county, results)
+    print(f'assets/images/one-stop/per-week-totals.png')
+    figure.savefig(f'assets/images/one-stop/per-week-totals.png',
+                   bbox_inches='tight')
+
+
 @click.command()
 @click.option('-f', '--filename', type=str)
 def main(filename):
@@ -94,6 +142,8 @@ def main(filename):
     plt.rcParams["axes.labelsize"] = 16
     plt.rcParams["xtick.labelsize"] = 16
     plt.rcParams["ytick.labelsize"] = 16
+
+    plot_state(one_stop)
 
     for county, results in one_stop.groupby(by='county_desc'):
         name = county.lower()
