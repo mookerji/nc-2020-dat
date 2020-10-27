@@ -14,8 +14,8 @@ def read_absentee_voter_file(filename):
     ]
     absentee = pd.read_csv(filename, parse_dates=date_cols)
     age_groups = {
-        pd.Interval(18, 25, closed='right'): '18 - 25',
-        pd.Interval(25, 40, closed='right'): '25 - 40',
+        pd.Interval(17, 25, closed='right'): '18 - 25',
+        pd.Interval(25, 40, closed='right'): '26 - 40',
         pd.Interval(40, 65, closed='right'): '41 - 65',
         pd.Interval(65, 120, closed='right'): 'Over 65',
     }
@@ -23,20 +23,18 @@ def read_absentee_voter_file(filename):
         'DEM': 'Democrats',
         'UNA': 'Unaffiliated',
         'REP': 'Republicans',
-        'LIB': 'Other',
-        'GRE': 'Other',
-        'CST': 'Other'
+        'LIB': 'Other (LIB-GRE-CST)',
+        'GRE': 'Other (LIB-GRE-CST)',
+        'CST': 'Other (LIB-GRE-CST)',
     }
     gender = {'M': 'Male', 'F': 'Female', 'U': 'Undesignated'}
     absentee['gender'] = absentee['gender'].map(gender)
     absentee['ballot_request_party'] = absentee['ballot_request_party'].map(
         parties)
     absentee['voter_party_code'] = absentee['voter_party_code'].map(parties)
-    absentee['age_group'] = pd.cut(absentee.age, bins=[18, 25, 40, 65,
-                                                       120]).map(age_groups)
+    absentee['age_group'] \
+      = pd.cut(absentee.age, bins=[17, 25, 40, 65, 120]).map(age_groups).astype(str)
     absentee['party'] = absentee['voter_party_code']
-    #assert absentee[absentee.ballot_req_type != 'MAIL'].empty
-    #absentee = absentee[absentee.ballot_req_type == 'MAIL']
     return absentee
 
 

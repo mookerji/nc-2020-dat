@@ -137,6 +137,7 @@ def plot_state(results):
 def main(filename):
     absentee = read_absentee_voter_file(filename)
     one_stop = absentee[absentee.ballot_req_type == 'ONE-STOP']
+    import pdb; pdb.set_trace()
     plt.rcParams["figure.figsize"] = [16, 10]
     plt.rcParams["axes.titlesize"] = 16
     plt.rcParams["axes.labelsize"] = 16

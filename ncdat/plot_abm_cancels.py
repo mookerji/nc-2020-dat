@@ -13,6 +13,7 @@ from shapefiles import load_shapefile_counties, to_kml, read_zip_codes
 
 gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'
 
+
 def plot_mail_cancels(zips, absentee, party):
     absentee = absentee[absentee.ballot_req_type == 'MAIL']
     absentee.dropna(subset=['ballot_rtn_status'], inplace=True)
@@ -29,28 +30,59 @@ def plot_mail_cancels(zips, absentee, party):
     count_by_zip_code = absentee.groupby(by='voter_zip').county_desc.count()
     zips['total'] = count_by_zip_code
     zips.dropna(subset=['total'], inplace=True)
-    bins = [0, 5, 20, 40, 60, 200]
+    quantiles = [0, 0.50, 0.75, 0.95, 0.99, 1.]
     zips['quantile'] \
-      = pd.cut(zips['total'], bins, duplicates='drop').astype('str')
+      = pd.qcut(zips['total'], q=quantiles, duplicates='drop').astype('str')
 
     zips = zips.join(reasons).fillna(0)
     ts = pd.Timestamp.now().isoformat()
     prefix = party.lower()
-    out = zips[['total', 'quantile', 'geometry'] +list(reasons.columns.values)]
-    to_kml(out, f'limbo/{prefix}_rejected_zip_{ts}.kml')
+    out = zips[['total', 'quantile', 'geometry'] +
+               list(reasons.columns.values)]
+    to_kml(out, f'limbo/absentee/{prefix}_rejected_zip_{ts}.kml')
+
+
+def plot_mail_cancels_non_spoiled(zips, absentee, party):
+    absentee = absentee[absentee.ballot_req_type == 'MAIL']
+    absentee.dropna(subset=['ballot_rtn_status'], inplace=True)
+    absentee \
+      = absentee[~absentee.ballot_rtn_status.str.contains('ACCEPTED') & (absentee.party == party)]
+    absentee \
+      = absentee[(absentee.ballot_rtn_status != 'SPOILED') & (absentee.party == party)]
+
+    reasons = {}
+    for zip_code, group in absentee.groupby(by='voter_zip'):
+        reasons[zip_code] \
+          = group.groupby(by='ballot_rtn_status').county_desc.count()
+    reasons = pd.DataFrame(reasons).T.fillna(0)
+
+    # Zipcodes
+    count_by_zip_code = absentee.groupby(by='voter_zip').county_desc.count()
+    zips['total'] = count_by_zip_code
+    zips.dropna(subset=['total'], inplace=True)
+    quantiles = [0, 0.50, 0.75, 0.95, 0.99, 1.]
+    zips['quantile'] \
+      = pd.qcut(zips['total'], q=quantiles, duplicates='drop').astype('str')
+
+    zips = zips.join(reasons).fillna(0)
+    ts = pd.Timestamp.now().isoformat()
+    prefix = party.lower()
+    out = zips[['total', 'quantile', 'geometry'] +
+               list(reasons.columns.values)]
+    to_kml(out, f'limbo/absentee/{prefix}_rejected_non_spoiled_zip_{ts}.kml')
 
 
 def plot_one_stop(zips, absentee, party):
     absentee = absentee[absentee.ballot_req_type == 'ONE-STOP']
     count_by_zip_code = absentee.groupby(by='voter_zip').county_desc.count()
     zips['total_cast'] = count_by_zip_code
-    bins = [0, 1000, 4000, 8000, 16000]
+    quantiles = [0, 0.50, 0.75, 0.95, 0.99, 1.]
     zips['quantile'] \
-      = pd.cut(zips['total_cast'], bins, duplicates='drop').astype('str')
+      = pd.qcut(zips['total_cast'], q=quantiles, duplicates='drop').astype('str')
     ts = pd.Timestamp.now().isoformat()
     prefix = party.lower()
     out = zips[['total_cast', 'quantile', 'geometry']]
-    to_kml(out, f'limbo/{prefix}_one_stop_cast_zip_{ts}.kml')
+    to_kml(out, f'limbo/absentee/{prefix}_one_stop_cast_zip_{ts}.kml')
 
 
 @click.command()
@@ -68,7 +100,9 @@ def main(filename, zip_file, county, party):
         prefix = 'state'
     zips = read_zip_codes(zip_file)
     plot_mail_cancels(zips, absentee, party)
+    plot_mail_cancels_non_spoiled(zips, absentee, party)
     plot_one_stop(zips, absentee, party)
+
 
 if __name__ == '__main__':
     sys.exit(main())

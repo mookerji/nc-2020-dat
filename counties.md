@@ -23,4 +23,8 @@ permalink: /counties
 
 ![{{ county.county_name }}](assets/images/one-stop/county-age-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
+### Days to Send Requested Absentee-by-Mail Ballot
+
+![{{ county.county_name }}](assets/images/abm-latency/request-to-mail/{{ county.county_name | downcase }}.png){:class="img-responsive"}
+
 {% endfor %}
