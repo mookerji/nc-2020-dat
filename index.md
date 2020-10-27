@@ -7,6 +7,8 @@ title: Statewide Overview
 
 ## [Summary](#summary)
 
+* OUT OF DATE *
+
 {% include tables/totals_summary.html %}
 
 - Registrations since 2020-02-28 (before COVID-19 shelter-in-place), absentee
