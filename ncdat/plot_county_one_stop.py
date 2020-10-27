@@ -88,13 +88,12 @@ def plot_one_stop_counts_by_week(county, results):
     results_ = results_[results_.age_group != np.isnan]
     col_types = ['party', 'race', 'gender', 'age_group']
     for col_type in col_types:
-        daily = results_.groupby('ballot_rtn_dt')
-        summed = daily.apply(
-            lambda v: v.groupby(col_type)['ballot_rtn_dt'].count())
+        daily = results_.groupby(pd.Grouper(freq='1D', key='ballot_rtn_dt'))
+        summed = daily.apply(lambda v: v.groupby(col_type)['ballot_rtn_dt'].count())
         if isinstance(summed.index, pd.MultiIndex):
-            summed.unstack().plot.bar(stacked=True, ax=axs[ax_index])
-        else:
-            summed.plot.bar(stacked=True, ax=axs[ax_index])
+            summed = summed.unstack()
+        summed = summed.resample('1D').asfreq().fillna(0)
+        summed.plot.bar(stacked=True, ax=axs[ax_index])
         axs[ax_index].legend()
         axs[ax_index].set_xlabel('')
         if ax_index < 2:
@@ -115,21 +114,25 @@ def plot_state(results):
     print(f'assets/images/one-stop/county-party-totals.png')
     figure.savefig(f'assets/images/one-stop/county-party-totals.png',
                    bbox_inches='tight')
+    plt.close(figure)
 
     figure = plot_by_race(county, results, horizontal, groupby, ylabel)
     print(f'assets/images/one-stop/county-race-totals.png')
     figure.savefig(f'assets/images/one-stop/county-race-totals.png',
                    bbox_inches='tight')
+    plt.close(figure)
 
     figure = plot_by_age_group(county, results, horizontal, groupby, ylabel)
     print(f'assets/images/one-stop/county-age-totals.png')
     figure.savefig(f'assets/images/one-stop/county-age-totals.png',
                    bbox_inches='tight')
+    plt.close(figure)
 
     figure = plot_one_stop_counts_by_week(county, results)
     print(f'assets/images/one-stop/per-week-totals.png')
     figure.savefig(f'assets/images/one-stop/per-week-totals.png',
                    bbox_inches='tight')
+    plt.close(figure)
 
 
 @click.command()
@@ -153,21 +156,25 @@ def main(filename):
         figure.savefig(
             f'assets/images/one-stop/county-party-totals/{name}.png',
             bbox_inches='tight')
+        plt.close(figure)
 
         figure = plot_by_race(county, results)
         print(f'assets/images/one-stop/county-race-totals/{name}.png')
         figure.savefig(f'assets/images/one-stop/county-race-totals/{name}.png',
                        bbox_inches='tight')
+        plt.close(figure)
 
         figure = plot_by_age_group(county, results)
         print(f'assets/images/one-stop/county-age-totals/{name}.png')
         figure.savefig(f'assets/images/one-stop/county-age-totals/{name}.png',
                        bbox_inches='tight')
+        plt.close(figure)
 
         figure = plot_one_stop_counts_by_week(county, results)
         print(f'assets/images/one-stop/per-week-totals/{name}.png')
         figure.savefig(f'assets/images/one-stop/per-week-totals/{name}.png',
                        bbox_inches='tight')
+        plt.close(figure)
 
 
 if __name__ == '__main__':
