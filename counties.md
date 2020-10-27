@@ -11,9 +11,11 @@ permalink: /counties
 
 ![{{ county.county_name }}]({{  county.party_registration_changes_graph  }} ){:class="img-responsive"}
 
+
 ### One Stop (By Day)
 
 ![{{ county.county_name }}](assets/images/one-stop/per-week-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
+
 
 ### One Stop (By Polling Location)
 
@@ -23,8 +25,10 @@ permalink: /counties
 
 ![{{ county.county_name }}](assets/images/one-stop/county-age-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
+
 ### Days to Send Requested Absentee-by-Mail Ballot
 
 ![{{ county.county_name }}](assets/images/abm-latency/request-to-mail/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
+---------------------------------------
 {% endfor %}
