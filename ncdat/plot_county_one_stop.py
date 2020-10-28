@@ -64,10 +64,7 @@ def plot_by_age_group(county,
                       ylabel='Early Voting Site Name'):
     data = results.groupby(
         by=[groupby, 'age_group']).count().voter_reg_num.unstack()
-
     to_plot = data.columns
-    # TODO: remove if we coerce to strings at parse time
-    #data.columns = data.columns.astype(str)
     data['total'] = data.sum(axis=1)
     if horizontal:
         ax = data.sort_values(by='total').plot.barh(y=to_plot, stacked=True)
