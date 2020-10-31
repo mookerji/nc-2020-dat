@@ -12,3 +12,4 @@ python3 ncdat/one_stop_locations.py
 
 python3 ncdat/plot_county_one_stop.py --filename "$VOTE_FILE"
 python3 ncdat/plot_abm_latency.py --filename "$VOTE_FILE"
+python3 ncdat/plot_accepted.py  --filename "$VOTE_FILE"
