@@ -13,6 +13,13 @@ permalink: /counties
 ![{{ county.county_name }}]({{  county.party_registration_changes_graph  }} ){:class="img-responsive"}
 
 
+### [Votes Cast (By Demographic)](#{{ county.county_id }}-dempgrahic)
+
+![{{ county.county_name }}](assets/images/accepted/demographic-cumulative-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
+<br/><br/>
+![{{ county.county_name }}](assets/images/accepted/demographic-per-week-totals//{{ county.county_name | downcase }}.png){:class="img-responsive"}
+
+
 ### [Votes Cast (By Request Type)](#{{ county.county_id }}-accepted)
 
 ![{{ county.county_name }}](assets/images/accepted/type-per-week-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
@@ -26,9 +33,9 @@ permalink: /counties
 ### [One Stop (By Polling Location)](#{{ county.county_id }}-one-stop-locations)
 
 ![{{ county.county_name }}](assets/images/one-stop/county-party-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
-
+<br/><br/>
 ![{{ county.county_name }}](assets/images/one-stop/county-race-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
-
+<br/><br/>
 ![{{ county.county_name }}](assets/images/one-stop/county-age-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
 

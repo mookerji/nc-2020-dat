@@ -29,6 +29,13 @@ Summary Table **OUT OF DATE**
 
 ## Votes Cast
 
+### By Demographic
+
+![demographic-per-week](assets/images/accepted/type-per-week-totals.png){:class="img-responsive"}
+<br/><br/>
+![demographic-total](assets/images/accepted/demographic-per-week-totals.png){:class="img-responsive"}
+
+
 ### By Request Type (Mail, One-Stop)
 
 ![type-per-week-totals](assets/images/accepted/type-per-week-totals.png){:class="img-responsive"}
@@ -76,9 +83,9 @@ VBM Submissions **OUT OF DATE**
 ### By County
 
 ![county-party-totals](assets/images/one-stop/county-party-totals.png){:class="img-responsive"}
-
+<br/><br/>
 ![count-race-totals](assets/images/one-stop/county-race-totals.png){:class="img-responsive"}
-
+<br/><br/>
 ![county-age-totals](assets/images/one-stop/county-age-totals.png){:class="img-responsive"}
 
 ## Maps
