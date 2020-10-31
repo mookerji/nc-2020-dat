@@ -38,6 +38,11 @@ Summary Table **OUT OF DATE**
 ![demographic-total](assets/images/accepted/demographic-per-week-totals.png){:class="img-responsive"}
 
 
+### By County
+
+![cumulative-by-county](assets/images/accepted/cumulative-by-county-party.png){:class="img-responsive"}
+
+
 ### By Request Type (Mail, One-Stop)
 
 ![type-per-week-totals](assets/images/accepted/type-per-week-totals.png){:class="img-responsive"}
