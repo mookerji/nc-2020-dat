@@ -1,8 +1,5 @@
 import sys
 
-from palettable.colorbrewer.sequential import OrRd_9
-from matplotlib.colors import ListedColormap, to_hex
-
 import click
 import matplotlib
 import matplotlib.pyplot as plt
@@ -90,7 +87,11 @@ def plot_one_stop_counts_by_week(county, results):
         if isinstance(summed.index, pd.MultiIndex):
             summed = summed.unstack()
         summed = summed.resample('1D').asfreq().fillna(0)
-        summed.plot.bar(stacked=True, ax=axs[ax_index])
+        if col_type == 'party':
+            colors = ['deepskyblue', 'green', 'tomato', 'slategray']
+            summed.plot.bar(stacked=True, ax=axs[ax_index], color=colors)
+        else:
+            summed.plot.bar(stacked=True, ax=axs[ax_index])
         axs[ax_index].legend()
         axs[ax_index].set_xlabel('')
         if ax_index < 2:
