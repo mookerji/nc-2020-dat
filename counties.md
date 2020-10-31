@@ -8,17 +8,17 @@ permalink: /counties
 
 ## [{{ county.county_name }}](#{{ county.county_id }})
 
-### Registrations
+### [Registrations](#{{ county.county_id }}-registrations)
 
 ![{{ county.county_name }}]({{  county.party_registration_changes_graph  }} ){:class="img-responsive"}
 
 
-### One Stop (By Day)
+### [One Stop (By Day)](#{{ county.county_id }}-one-stop-by-day)
 
 ![{{ county.county_name }}](assets/images/one-stop/per-week-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
 
-### One Stop (By Polling Location)
+### [One Stop (By Polling Location)](#{{ county.county_id }}-one-stop-locations)
 
 ![{{ county.county_name }}](assets/images/one-stop/county-party-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
@@ -27,7 +27,12 @@ permalink: /counties
 ![{{ county.county_name }}](assets/images/one-stop/county-age-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
 
-### Days to Send Requested Absentee-by-Mail Ballot
+### [Accepted Absentee Request Volume (by Request Type)](#{{ county.county_id }}-accepted-absentee)
+
+![{{ county.county_name }}](assets/images/accepted/type-per-week-totals/{{ county.county_name | downcase }}.png){:class="img-responsive"}
+
+
+### [Days to Send Requested Absentee-by-Mail Ballot](#{{ county.county_id }}-latency)
 
 ![{{ county.county_name }}](assets/images/abm-latency/request-to-mail/{{ county.county_name | downcase }}.png){:class="img-responsive"}
 
