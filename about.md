@@ -32,6 +32,9 @@ summary statistics from this [Jupyter notebook][notebook].
 
 ### Changelog
 
+- **2020-10-30**
+  * New graphs: Accepted ballots broken down by ballot request type and
+    demographic for state and all counties.
 - **2020-10-23**
   * New map: statewide polling places and precincts.
 - **2020-10-20**
