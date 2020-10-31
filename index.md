@@ -7,7 +7,7 @@ title: Statewide Overview
 
 ## [Summary](#summary)
 
-*OUT OF DATE*
+Summary Table **OUT OF DATE**
 
 {% include tables/totals_summary.html %}
 
@@ -29,11 +29,11 @@ title: Statewide Overview
 
 ## Votes Cast
 
-## By Request Type (Mail, One-Stop)
+### By Request Type (Mail, One-Stop)
 
 ![type-per-week-totals](assets/images/accepted/type-per-week-totals.png){:class="img-responsive"}
 
-## [Absentee/VBM Requests](#absentee)
+### [Absentee/VBM Requests](#absentee)
 
 ### By Week
 
@@ -47,7 +47,7 @@ title: Statewide Overview
 
 ## [Absentee/VBM Submissions](#submissions)
 
-*OUT OF DATE*
+VBM Submissions **OUT OF DATE**
 
 ### [By Week - Submitted](#submitted-by-week)
 

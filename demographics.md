@@ -6,6 +6,8 @@ permalink: /demographics
 
 ## [Absentee/VBM Requests](#absentee-requests)
 
+Tables below are **OUT OF DATE**
+
 ### Top 20 Groups
 <br>
 {% include tables/abm_top_20_groups.html %}
