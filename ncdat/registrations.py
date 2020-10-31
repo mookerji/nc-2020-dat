@@ -1,6 +1,7 @@
 import click
 import pandas as pd
 
+import glob
 import sys
 
 PARTIES = [
@@ -48,11 +49,12 @@ def registrations_to_csv(year='2020'):
 def main():
     # 2020
     registrations = registrations_to_csv()
+    print('data/registrations2020.csv')
     registrations.to_csv('data/registrations2020.csv', index=False)
     # 2016?
     registrations_2016 = registrations_to_csv(year='2016')
     registrations_2016.to_csv('data/registrations2016.csv', index=False)
-    registrations_2016.head()
+    print('data/registrations2016.csv')
 
 
 if __name__ == '__main__':
