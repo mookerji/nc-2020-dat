@@ -7,7 +7,7 @@ title: Statewide Overview
 
 ## [Summary](#summary)
 
-* OUT OF DATE *
+*OUT OF DATE*
 
 {% include tables/totals_summary.html %}
 
@@ -27,6 +27,12 @@ title: Statewide Overview
 <br/><br/>
 ![registration normalized]({{ site.data.state.state.party_new_electorate_per_county_graph }} ){:class="img-responsive"}
 
+## Votes Cast
+
+## By Request Type (Mail, One-Stop)
+
+![type-per-week-totals](assets/images/accepted/type-per-week-totals.png){:class="img-responsive"}
+
 ## [Absentee/VBM Requests](#absentee)
 
 ### By Week
@@ -40,6 +46,8 @@ title: Statewide Overview
 ![vbm county]({{ site.data.state.state.statewide_vbm_requests_by_county }} ){:class="img-responsive"}
 
 ## [Absentee/VBM Submissions](#submissions)
+
+*OUT OF DATE*
 
 ### [By Week - Submitted](#submitted-by-week)
 
@@ -63,15 +71,15 @@ title: Statewide Overview
 
 ### By Week
 
-![{{ county.county_name }}](assets/images/one-stop/per-week-totals.png){:class="img-responsive"}
+![per-week-totals](assets/images/one-stop/per-week-totals.png){:class="img-responsive"}
 
 ### By County
 
-![{{ county.county_name }}](assets/images/one-stop/county-party-totals.png){:class="img-responsive"}
+![county-party-totals](assets/images/one-stop/county-party-totals.png){:class="img-responsive"}
 
-![{{ county.county_name }}](assets/images/one-stop/county-race-totals.png){:class="img-responsive"}
+![count-race-totals](assets/images/one-stop/county-race-totals.png){:class="img-responsive"}
 
-![{{ county.county_name }}](assets/images/one-stop/county-age-totals.png){:class="img-responsive"}
+![county-age-totals](assets/images/one-stop/county-age-totals.png){:class="img-responsive"}
 
 ## Maps
 

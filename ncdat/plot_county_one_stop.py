@@ -101,7 +101,6 @@ def plot_one_stop_counts_by_week(county, results):
     )
     return figure
 
-
 def plot_state(results):
     county = 'Every'
     groupby = 'county_desc'
