@@ -35,6 +35,24 @@ def read_absentee_voter_file(filename):
     absentee['age_group'] \
       = pd.cut(absentee.age, bins=[17, 25, 40, 65, 120]).map(age_groups).astype(str)
     absentee['party'] = absentee['voter_party_code']
+    labels = [
+        'voter_street_address',
+        'voter_city',
+        'voter_state',
+        'ballot_mail_street_address',
+        'ballot_mail_city',
+        'ballot_mail_state',
+        'ballot_mail_zip',
+        'other_mail_addr1',
+        'other_mail_addr2',
+        'other_city_state_zip',
+        'relative_request_name',
+        'relative_request_address',
+        'relative_request_city',
+        'relative_request_state',
+        'relative_request_zip',
+    ]
+    absentee.drop(labels=labels, axis=1, inplace=True)
     return absentee
 
 
