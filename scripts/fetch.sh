@@ -10,6 +10,11 @@ curl -vk https://dl.ncsbe.gov.s3.amazonaws.com/data/PartyChange/2020_party_chang
 # Download
 curl -k https://dl.ncsbe.gov.s3.amazonaws.com/ENRS/2020_11_03/absentee_demo_stats_20201103.csv > limbo/absentee_demo_stats_20201103.csv
 
+# Download voter file
+curl -k https://dl.ncsbe.gov.s3.amazonaws.com/data/ncvoter_Statewide.zip > limbo/ncvoter_Statewide.zip
+unzip -o limbo/ncvoter_Statewide.zip -d limbo/
+iconv -f utf-8 -t utf-8 -c limbo/ncvoter_Statewide.csv > limbo/nc-voter-file-stripped.csv
+
 # Get absentee votes
 curl -k https://dl.ncsbe.gov.s3.amazonaws.com/ENRS/2020_11_03/absentee_20201103.zip > limbo/absentee_20201103.zip
 
